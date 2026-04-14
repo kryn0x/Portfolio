@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nidhi Kumari | Data Analyst Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237c3aed'/><text y='.9em' font-size='65' x='50%' text-anchor='middle' font-family='Inter,sans-serif' font-weight='900' fill='white'>N</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Background Elements -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">NK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Nidhi Kumari</h1>
+        <div class="hero-role">
+          <span class="role-prefix">Aspiring </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-tagline">Transforming data into meaningful insights</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/kryn0x" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/nidhi-kumari" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:nk537220@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="data-card">
+          <div class="data-card-header">
+            <span class="data-dot red"></span>
+            <span class="data-dot yellow"></span>
+            <span class="data-dot green"></span>
+            <span class="data-card-title">data_insights.py</span>
+          </div>
+          <div class="data-card-body">
+            <div class="code-line"><span class="code-keyword">import</span> <span class="code-module">pandas</span> <span class="code-keyword">as</span> pd</div>
+            <div class="code-line"><span class="code-keyword">import</span> <span class="code-module">numpy</span> <span class="code-keyword">as</span> np</div>
+            <div class="code-line empty"></div>
+            <div class="code-line"><span class="code-comment"># Transforming raw data</span></div>
+            <div class="code-line"><span class="code-var">df</span> = pd.<span class="code-fn">read_csv</span>(<span class="code-str">'dataset.csv'</span>)</div>
+            <div class="code-line"><span class="code-var">insights</span> = df.<span class="code-fn">describe</span>()</div>
+            <div class="code-line empty"></div>
+            <div class="code-line"><span class="code-comment"># Visualize patterns</span></div>
+            <div class="code-line"><span class="code-var">df</span>.<span class="code-fn">plot</span>(kind=<span class="code-str">'bar'</span>)</div>
+          </div>
+          <div class="chart-preview">
+            <div class="chart-bar" style="--h:60%"></div>
+            <div class="chart-bar" style="--h:85%"></div>
+            <div class="chart-bar" style="--h:45%"></div>
+            <div class="chart-bar" style="--h:70%"></div>
+            <div class="chart-bar" style="--h:90%"></div>
+            <div class="chart-bar" style="--h:55%"></div>
+            <div class="chart-bar" style="--h:75%"></div>
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fas fa-chart-line"></i> Data Analysis</div>
+        <div class="floating-badge badge-2"><i class="fas fa-brain"></i> AI Enthusiast</div>
+        <div class="floating-badge badge-3"><i class="fas fa-database"></i> SQL Expert</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>B.Tech Computer Science</strong> student at K.R. Mangalam University with a passion for turning complex datasets into clear, actionable insights. With hands-on experience as a <strong>Data Analyst Intern at Unified Mentor</strong>, I've developed a strong foundation in data analysis, visualization, and storytelling.</p>
+          <p>I thrive at the intersection of <strong>data science and AI</strong>, constantly exploring how machine learning and analytics can solve real-world problems. My approach combines rigorous data cleaning, exploratory analysis, and compelling visualizations to drive informed decisions.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-chart-bar"></i>
+              <div>
+                <h4>Data Analysis</h4>
+                <p>EDA, statistical analysis, and pattern recognition</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-eye"></i>
+              <div>
+                <h4>Visualization</h4>
+                <p>Power BI dashboards and Python charts</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-sitemap"></i>
+              <div>
+                <h4>Structured Workflows</h4>
+                <p>Clean pipelines from raw data to insights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card glass">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number">8.35</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Internship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Pandas, NumPy, data manipulation and analysis</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+            <span class="skill-pct" data-target="85">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>SQL / MySQL</h3>
+          <p>Complex queries, joins, aggregations, database design</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+            <span class="skill-pct" data-target="80">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-broom"></i></div>
+          <h3>Data Cleaning & EDA</h3>
+          <p>Handling missing values, outliers, feature engineering</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+            <span class="skill-pct" data-target="85">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Data Visualization</h3>
+          <p>Matplotlib, Seaborn, storytelling with data</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+            <span class="skill-pct" data-target="80">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-chart-column"></i></div>
+          <h3>Power BI</h3>
+          <p>Interactive dashboards, DAX, business intelligence</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+            <span class="skill-pct" data-target="75">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+          <h3>Excel</h3>
+          <p>Pivot tables, VLOOKUP, data analysis toolpak</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+            <span class="skill-pct" data-target="80">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <h3>Java</h3>
+          <p>OOP principles, data structures, algorithms</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+            <span class="skill-pct" data-target="70">0%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Basics</h3>
+          <p>Machine learning concepts, model evaluation</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+            <span class="skill-pct" data-target="65">0%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <a href="https://github.com/kryn0x/Covid19_Clinical_Project" target="_blank" class="project-card glass reveal project-card-link">
+          <div class="project-icon"><i class="fas fa-virus"></i></div>
+          <div class="project-content">
+            <h3>COVID-19 Clinical Trials Analysis</h3>
+            <p>Performed comprehensive EDA on global COVID-19 clinical trial datasets. Identified trends in trial phases, sponsor types, and geographic distribution to uncover research patterns.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <span class="btn btn-sm"><i class="fab fa-github"></i> View Code</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/kryn0x/Netflix-Data-Cleaning-Analysis-and-Visualization" target="_blank" class="project-card glass reveal project-card-link">
+          <div class="project-icon"><i class="fas fa-film"></i></div>
+          <div class="project-content">
+            <h3>Netflix Data Analysis</h3>
+            <p>Analyzed Netflix's content library to uncover trends in genres, release years, ratings, and content distribution across countries using Python data analysis techniques.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">EDA</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <span class="btn btn-sm"><i class="fab fa-github"></i> View Code</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/kryn0x/Cybersecurity-Suspicious-Web-Threat-Interaction" target="_blank" class="project-card glass reveal project-card-link">
+          <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="project-content">
+            <h3>Cybersecurity Threat Analysis</h3>
+            <p>Analyzed cybersecurity threat datasets to identify attack patterns, vulnerability trends, and risk factors. Visualized threat landscapes to support security decision-making.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Visualization</span>
+              <span class="tag">EDA</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <span class="btn btn-sm"><i class="fab fa-github"></i> View Code</span>
+          </div>
+        </a>
+
+        <div class="project-card glass reveal">
+          <div class="project-icon"><i class="fas fa-apple-whole"></i></div>
+          <div class="project-content">
+            <h3>NutriLite Web Application</h3>
+            <p>Built a full-stack nutrition tracker web app enabling users to log meals, track daily caloric intake, and monitor nutritional goals with a clean, responsive interface.</p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <span class="btn btn-sm"><i class="fab fa-github"></i> No Repo</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Where I've Worked</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass timeline-card-clickable" id="internshipCard" role="button" tabindex="0" aria-label="View internship documents">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analyst Intern</h3>
+                <span class="company"><i class="fas fa-building"></i> Unified Mentor</span>
+              </div>
+              <span class="timeline-date"><i class="fas fa-calendar"></i> June – Aug 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li><i class="fas fa-chevron-right"></i> Conducted exploratory data analysis (EDA) on real-world datasets to uncover trends and actionable insights</li>
+              <li><i class="fas fa-chevron-right"></i> Built interactive Power BI dashboards to visualize KPIs and business metrics for stakeholders</li>
+              <li><i class="fas fa-chevron-right"></i> Wrote optimized SQL queries for data extraction, transformation, and reporting</li>
+              <li><i class="fas fa-chevron-right"></i> Performed Python-based data preprocessing including cleaning, normalization, and feature engineering</li>
+              <li><i class="fas fa-chevron-right"></i> Collaborated with team members to deliver data-driven reports and presentations</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">EDA</span>
+            </div>
+            <div class="timeline-doc-hint">
+              <i class="fas fa-folder-open"></i> Click to view internship documents
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-grid">
+        <a href="documents/report_card.pdf" target="_blank" class="edu-card glass reveal edu-card-link">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <h3>B.Tech in Computer Science</h3>
+            <span class="edu-institution"><i class="fas fa-university"></i> K.R. Mangalam University, Haryana</span>
+            <div class="edu-meta">
+              <span><i class="fas fa-calendar-alt"></i> 2023 – 2027</span>
+              <span class="cgpa"><i class="fas fa-star"></i> CGPA: 8.35</span>
+            </div>
+            <p>Focused on data structures, algorithms, database management, and AI fundamentals. Active participant in data analytics projects and technical workshops.</p>
+            <span class="edu-report-hint"><i class="fas fa-file-alt"></i> Click to view report card</span>
+          </div>
+        </a>
+        <div class="certifications reveal">
+          <h3 class="cert-title"><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="cert-card glass">
+            <i class="fas fa-chart-bar cert-icon"></i>
+            <div>
+              <h4>Data Analytics Certification</h4>
+              <p>Comprehensive training in data analysis methodologies and tools</p>
+            </div>
+          </div>
+          <a href="certificates/dbms_certificate.pdf" target="_blank" class="cert-card cert-card-link glass">
+            <i class="fas fa-database cert-icon"></i>
+            <div>
+              <h4>Database and SQL <span class="cert-issuer">· Infosys Springboard</span></h4>
+              <p>Database management systems, SQL, and data modeling</p>
+              <span class="cert-view-hint"><i class="fas fa-external-link-alt"></i> Click to view certificate</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I'm open to internships, collaborations, and data-driven opportunities.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:nk537220@gmail.com" class="contact-card glass">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>nk537220@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://github.com/kryn0x" target="_blank" class="contact-card glass">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/kryn0x</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/nidhi-kumari" target="_blank" class="contact-card glass">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/nidhi-kumari</p>
+            </div>
+          </a>
+          <div class="contact-card glass">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Sohna, Gurugram, India</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass reveal" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Let's collaborate on something amazing..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent successfully!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <span class="gradient-text">Nidhi Kumari</span></p>
+      <p class="footer-sub">© 2025 · Transforming data into meaningful insights</p>
+    </div>
+  </footer>
+
+  <!-- Internship Documents Modal -->
+  <div class="modal-overlay" id="docsModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box glass">
+      <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-icon"><i class="fas fa-briefcase"></i></div>
+      <h3 id="modalTitle">Internship Documents</h3>
+      <p>Data Analyst Intern &nbsp;·&nbsp; Unified Mentor &nbsp;·&nbsp; June – Aug 2025</p>
+      <div class="modal-actions">
+        <a href="certificates/offer_letter.pdf" target="_blank" class="modal-btn">
+          <i class="fas fa-file-signature"></i>
+          <span>Offer Letter</span>
+          <i class="fas fa-external-link-alt modal-btn-arrow"></i>
+        </a>
+        <a href="certificates/internship_certificate.pdf" target="_blank" class="modal-btn">
+          <i class="fas fa-certificate"></i>
+          <span>Completion Certificate</span>
+          <i class="fas fa-external-link-alt modal-btn-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
